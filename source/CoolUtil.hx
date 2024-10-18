@@ -8,6 +8,7 @@ import lime.utils.AssetManifest;
 #if sys
 import sys.io.File;
 import sys.FileSystem;
+import sys.io.Process;
 #else
 import openfl.utils.Assets;
 #end
