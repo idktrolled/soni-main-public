@@ -6,7 +6,13 @@ import flixel.input.keyboard.FlxKey;
 import flixel.graphics.FlxGraphic;
 import Controls;
 
+@:structInit class SaveVariables {
+	#if android
+	public var storageType:String = "EXTERNAL_DATA";
+	#end
+}
 class ClientPrefs {
+	public static var data:SaveVariables = {};
 	public static var downScroll:Bool = false;
 	public static var middleScroll:Bool = false;
 	public static var showFPS:Bool = true;
