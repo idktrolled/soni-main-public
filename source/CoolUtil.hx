@@ -8,7 +8,6 @@ import lime.utils.AssetManifest;
 #if sys
 import sys.io.File;
 import sys.FileSystem;
-import sys.io.Process;
 #else
 import openfl.utils.Assets;
 #end
@@ -136,4 +135,10 @@ class CoolUtil
 		FlxG.openURL(site);
 		#end
 	}
+	#if mobile
+	public static function showPopUp(message:String, title:String):Void
+	{
+		Tools.showAlertDialog(title, message, {name: "OK", func: null}, null);
+	}
+        #end
 }
