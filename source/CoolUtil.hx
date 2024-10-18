@@ -1,5 +1,8 @@
 package;
 
+#if mobile
+import android.Tools;
+#end
 import flixel.FlxG;
 import openfl.utils.Assets;
 import lime.utils.Assets as LimeAssets;
